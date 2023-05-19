@@ -1,0 +1,62 @@
+@import url("https://fonts.cdnfonts.com/css/calculator");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(230, 243, 255);
+  font-family: "Calculator", sans-serif;
+  font-weight: 700;
+  outline: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clac {
+  background-color: aliceblue;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+}
+
+input {
+  grid-column: span 4;
+  height: 70px;
+  width: 240px;
+  background-color: rgb(227, 245, 245);
+  box-shadow: inset -5px -5px 12px #ffffff,
+    inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 30px;
+  color: rgb(70, 70, 70);
+  font-size: 35px;
+  text-align: end;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+button {
+  height: 45px;
+  width: 45px;
+  background-color: rgb(227, 245, 245);
+  box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+
+  border: none;
+  border-radius: 30px;
+  margin: 8px;
+  font-size: 20px;
+}
+
+.equal {
+  width: 105px;
+  border-radius: 40px;
+}
